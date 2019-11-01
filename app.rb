@@ -8,7 +8,7 @@ class App < Sinatra::Base
   
   post '/team' do
     binding.pry
-    if !params.blank
+    if Backtrace
       @name = params[:name]
       @coach = params[:coach]
       @pg = params[:pg]
